@@ -209,7 +209,7 @@ int get_type_5(string age, int num) {
 
 int main()
 {
-	string c, s, name, age, height, length, file1;
+	string c, s, name, age, height, length, file1, file2;
 	int  n, i, k, j, age_y, h, num = 0, x = 0, m;
 	double l, a, dec = 0; // Task-3 code formatting
 	
@@ -230,7 +230,8 @@ int main()
 	  
 	//file to be read
 	
-	file1 += ".output"; 
+	file2 = ".output" + file1; 
+	file1 = file2;
 	ofstream outputf(file1.c_str());
 		if (outputf.is_open()) {
         cout << "File2 is opened." << endl;
@@ -270,3 +271,4 @@ int main()
     inputf.close();
 	return 0;
 }
+

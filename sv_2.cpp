@@ -230,7 +230,7 @@ int main()
 	  
 	//file to be read
 	
-	file2 = ".output" + file1; 
+	file2 = "output" + file1; 
 	file1 = file2;
 	ofstream outputf(file1.c_str());
 		if (outputf.is_open()) {
@@ -271,4 +271,5 @@ int main()
     inputf.close();
 	return 0;
 }
+
 
